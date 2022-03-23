@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Book from '../../components/book/Book';
 import { getBookById } from '../../services/books';
 
-function BookDetail() {
+export default function BookDetail() {
   const id = 1; // TODO: Use id from route
   const [book, setBook] = useState(null);
 
@@ -15,4 +15,4 @@ function BookDetail() {
   return <Book book={book} showDetail />;
 }
 
-export default BookDetail;
+// export default BookDetail;
