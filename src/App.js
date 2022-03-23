@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import BookDetail from './views/Books/BookDetail';
+import Main from './views/Books/main';
 
 function App() {
   // TODO: Add routes to books & views
@@ -11,6 +12,11 @@ function App() {
     <BrowserRouter>
       <main className="container">
         <h1>Library Catalog</h1>
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+        </Switch>
         <Switch>
           <Route exact path="/booklist">
             <BookList />
