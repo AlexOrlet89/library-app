@@ -1,3 +1,3 @@
-test('one equals one', () => {
+it('one equals one', () => {
   expect(1).toEqual(1);
 });
